@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="petshop.css">
+    <title>PetShop Manager</title>
+</head>
+<body>
+    <header>
+        <h1>PetShop Manager</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#appointments">Atendimentos</a></li>
+            <li><a href="#inventory">Inventário</a></li>
+            <li><a href="#contacts">Contatos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="appointments">
+            <h2>Atendimentos</h2>
+            <div>
+                <label for="selectAppointment">Selecione um atendimento:</label>
+                <select id="selectAppointment"> 
+                    <!-- Opções serão preenchidas dinamicamente pelo JavaScript -->
+                </select>
+            </div> <br>
+            <button id="addAppointmentBtn" class="add-btn">Agendar Atendimento</button>
+            <ul id="appointmentList">
+                <!-- Aqui serão exibidos os atendimentos agendados -->
+            </ul>
+        </section>
+        <section id="inventory">
+            <h2>Inventário</h2>
+            <!-- Aqui você pode gerenciar o inventário de produtos -->
+        </section>
+        <section id="contacts">
+            <h2>Contatos</h2>
+            <!-- Aqui você pode gerenciar os contatos e fornecedores -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 PetShop Manager</p>
+    </footer>
+    <script src="petshop.js"></script>
+</body>
+</html>
